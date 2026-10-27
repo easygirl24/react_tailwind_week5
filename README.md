@@ -14,3 +14,29 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+## Lighthouse Audit
+
+### Performance Optimization
+
+I implemented lazy loading for the Home, Thank You, Item Details, and Not Found page components using React's `lazy()` and `Suspense`. This allows these page components to be loaded when needed.
+
+### Before and After Results
+
+| Page | Performance Before | Performance After |
+|---|---:|---:|
+| Home | 26 | 80 |
+| Registration Form | 36 | Pending re-audit |
+
+**Improvement:** The Home page Performance score increased by 54 points, from 26 to 80.
+
+### Accessibility
+
+| Page | Accessibility Score |
+|---|---:|
+| Home | 100 |
+| Registration Form | Pending confirmation |
+
+### Evidence
+
+Screenshots of the Lighthouse reports before and after optimization should be included with this project.
